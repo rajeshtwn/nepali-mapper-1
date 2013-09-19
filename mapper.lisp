@@ -6,7 +6,7 @@
 
 
 ;;; Storing The Rules as the Constants
-
+(defvar constlist '(ँ   ं  ा  ि ी  ु   ू  े  ै   ो ौअ आ इ ई उ ऊ ऋ ए ऐ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व स श ष ह))
 (defconstant ँ  'N'
     "Chandra Bindu Matches to N.") 
 (defconstant ं  'M'
@@ -122,3 +122,20 @@
 (print ै )
 (print ह )
 
+;;;Functions that take the file that need to be Mapped
+;;(with-open-file (stream "wordlist.txt")
+;;    (do ((line (read-line stream nil)
+;;               (read-line stream nil)))
+;;        ((null line))
+;;     (print line)))
+      
+;;(with-open-file (stream "wordlist.txt")
+;;    (do ((char (read-char stream nil)
+;;               (read-char stream nil)))
+;;        ((null char))
+;;      (print char)))      
+
+;;(let ((constantslist '(ँ   ह  ै   ी )))
+;;    (print constantslist))
+;;(print((list 'ह )))
+(print constlist)
