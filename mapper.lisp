@@ -3,9 +3,9 @@
 ;; @description: Maps the Nepali Word to the corresponding to the
 ;;               rules described.
 ;;
-;;
 
-;;Storing the Rules as Constants
+
+;;; Storing The Rules as the Constants
 
 (defconstant ँ  'N'
     "Chandra Bindu Matches to N.") 
@@ -45,45 +45,80 @@
     "...")
 (defconstant ए  'EH'
     "...")
-#|
-ऐ > AH IH
-ओ > OH
-औ > AH UN
-क > K AH
-ख > KA AH
-ग > G AH
-घ > GA AH
-ङ > NG AH
-च > CH AH
-छ > CHA AH
-ज > JH AH
-झ > JHA AH
-ञ > N AH
-ट > T AH
-ठ > TA AH
-ड > D AH
-ढ > DA AH
-ण > N AH
-त > TH AH
-थ > THA AH
-द > DH AH
-ध > DHA AH
-न > N AH
-प > P AH
-फ > PA AH
-ब > B AH
-भ > BA AH
-म > M AH
-य > Y AH
-र > R AH
-ल > L AH
-व > W AH
-स > S AH
-श > S AH
-ष > S AH
-ह > HH AH
-|#
+(defconstant ऐ  "AH IH"
+    "...")
+(defconstant ओ  'OH'
+    "...")
+(defconstant औ  "AH UN"
+    "...")
+(defconstant क  "K AH"
+    "...")
+(defconstant ख  "KA AH"
+    "...")
+(defconstant ग  "G AH"
+    "...")
+(defconstant घ  "GA AH"
+    "...")
+(defconstant ङ  "NG AH"
+    "...")
+(defconstant च  "CH AH"
+    "...")
+(defconstant छ  "CHA AH"
+    "...")
+(defconstant ज  "JH AH"
+    "...")
+(defconstant झ  "JHA AH"
+    "...")
+(defconstant ञ  "N AH"
+    "...")
+(defconstant ट  "T AH"
+    "...")
+(defconstant ठ  "TA AH"
+    "...")
+(defconstant ड  "D AH"
+    "...")
+(defconstant ढ  "DA AH"
+    "...")
+(defconstant ण  "N AH"
+    "...")
+(defconstant त  "TH AH"
+    "...")
+(defconstant थ  "THA AH"
+    "...")
+(defconstant द  "DH AH"
+    "...")
+(defconstant ध  "DHA AH"
+    "...")
+(defconstant न  "N AH"
+    "...")
+(defconstant प  "P AH"
+    "...")
+(defconstant फ  "PA AH"
+    "...")
+(defconstant ब  "B AH"
+    "...")
+(defconstant भ  "BA AH"
+    "...")
+(defconstant म  "M AH"
+    "...")
+(defconstant य  "Y AH"
+    "...")
+(defconstant र  "R AH"
+    "...")
+(defconstant ल  "L AH"
+    "...")
+(defconstant व  "W AH"
+    "...")
+(defconstant स  "S AH"
+    "...")
+(defconstant श  "S AH"
+    "...")
+(defconstant ष  "S AH"
+    "...")
+(defconstant ह  "HH AH"
+    "...")
 (print ं)
 (print ी)
 (print ै )
+(print ह )
 
