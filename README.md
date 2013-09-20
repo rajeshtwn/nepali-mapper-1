@@ -1,4 +1,4 @@
 nepali-mapper
 =============
 
-Simple Rule Based Nepali Mapper
+Simple Rule Based Nepali Mapper.
