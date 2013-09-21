@@ -123,11 +123,11 @@
 (print ह )
 
 ;;;Functions that take the file that need to be Mapped
-;;(with-open-file (stream "wordlist.txt")
-;;    (do ((line (read-line stream nil)
-;;               (read-line stream nil)))
-;;        ((null line))
-;;     (print line)))
+(with-open-file (stream "wordlist.txt")
+    (do ((line (read-line stream nil)
+               (read-line stream nil)))
+        ((null line))
+     (print line)))
       
 ;;(with-open-file (stream "wordlist.txt")
 ;;    (do ((char (read-char stream nil)
