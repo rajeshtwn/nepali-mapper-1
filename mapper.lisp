@@ -6,7 +6,7 @@
 
 
 ;;; Storing The Rules as the Constants
-(defvar constlist '(ँ   ं  ा  ि ी  ु   ू  े  ै   ो ौअ आ इ ई उ ऊ ऋ ए ऐ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व स श ष ह))
+(defvar constlist '(ँ   ं  ा  ि ी  ु   ू  े  ै   ो ौ अ आ इ ई उ ऊ ऋ ए ऐ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व स श ष ह))
 (defconstant ँ  'N'
     "Chandra Bindu Matches to N.") 
 (defconstant ं  'M'
@@ -66,7 +66,7 @@
 (defconstant छ  "CHA AH"
     "...")
 (defconstant ज  "JH AH"
-    "...")
+    "...")ष  "S AH"
 (defconstant झ  "JHA AH"
     "...")
 (defconstant ञ  "N AH"
@@ -123,11 +123,12 @@
 (print ह )
 
 ;;;Functions that take the file that need to be Mapped
-(with-open-file (stream "wordlist.txt")
-    (do ((line (read-line stream nil)
-               (read-line stream nil)))
-        ((null line))
-     (print line)))
+;;(with-open-file (stream "wordlist.txt")
+;;    (do ((line (read-line stream nil)
+;;               (read-line stream nil)))
+;;        ((null line))
+;;     (let ((a line))
+;;	(print a))))
       
 ;;(with-open-file (stream "wordlist.txt")
 ;;    (do ((char (read-char stream nil)
@@ -135,7 +136,36 @@
 ;;        ((null char))
 ;;      (print char)))      
 
+;;(let (variable*)
+;;  body-form*)
+
 ;;(let ((constantslist '(ँ   ह  ै   ी )))
 ;;    (print constantslist))
 ;;(print((list 'ह )))
-(print constlist)
+;;(print constlist)
+
+;;Testing and its working
+;;(with-open-file (stream "wordlist.txt")
+;;    (do ((line (read-line stream nil)
+;;               (read-line stream nil)))
+;;       ((null line))
+;;     (let ((a line))
+;;	(if (string-equal a "ह")
+;;		(with-open-file (outfile "out.txt" :direction :output) 
+;;			(prin1 a outfile)) 
+;;	(print "Null")))))
+
+
+;;(let ((a 'b))
+;;	(if (eq a 'c) 
+;;		(print a)
+;;	(print "Null")))
+
+;;(with-open-file (outfile "out.txt" :direction :output) 
+;;(prin1 '(here is an example) outfile)) 
+
+(with-open-file (stream "wordlist.txt")
+    (do ((char (read-char stream nil)
+               (read-char stream nil)))
+        ((null char))
+      (print char)))
