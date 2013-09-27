@@ -4,10 +4,16 @@
 @author:Aadesh Neupane
 Simple Rules to Map Nepali characters for Speech Processing
 """
-"""Follow these guidelines to create the mapper by Wednesday(25th September)"""
+"""
+Uses: Choose a Nepali Word List as the input from the dialog.
+Results: The result after mapping is written to out1.txt
+How To Run: ./1mapper.py in Terminal or python 1mapper.py in cmd
+Requirements: Tkinter
+"""
 #Maps the argumets to the set of rules defined and return the mapped word 
 
-import Tkinter
+from Tkinter import *
+from tkFileDialog import askopenfilename
 """def map():
     dict=rules()
     a=open("wordlist.txt","r")
@@ -26,9 +32,9 @@ import Tkinter
             b.write(ab)
         i=i+3
 """
-def map():
+def map(filename):
     dict=rules()
-    a=open("word_list.1","r")
+    a=open(filename,"r")
     b=open("out1.txt","w")
     text=a.readlines()
     #aa=text[19]
@@ -57,9 +63,12 @@ def main():
     #top=Tkinter.Tk()
     #top.mainloop()
     #rules()
-    map()
+    #map()
     #print dict["ह"]
     #pass
+    root=Tk()	
+    filename = askopenfilename(filetypes=[("allfiles","*"),("pythonfiles","*.py")])
+    map(filename)
 
 if __name__=='__main__':
     main()
