@@ -9,7 +9,14 @@ Simple Rules to Map Nepali characters for Speech Processing
 
 import Tkinter
 def map(word):
-    pass
+    a=open("wordlist.txt","r")
+    text=a.readlines()
+    for line in text:
+        #print line
+        line=line.strip()
+        if len(line)>0:
+            for c in line:
+                print unicode( c, "utf-8" )
 
 
 #Contains the set of rules for mapping
