@@ -1,7 +1,10 @@
 Nepali-Mapper
 =============
+Uses: Choose a Nepali Word List as the input from the dialog.
+Results: The result after mapping is written to out1.txt
+How To Run: ./1mapper.py in Terminal or python 1mapper.py in cmd
+Requirements: Tkinter
 
-<<<<<<< HEAD
 Simple Rule Based Nepali Mapper
 @author:Aadesh Neupane
 	Rajesh Twanabasu
@@ -12,4 +15,4 @@ techniques.
 Also, it comes with a simple interface.
 =======
 Simple Rule Based Nepali Mapper.
->>>>>>> a9655e491af9fbcc9fec9d289bb77b7d4f88f238
+
